@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante gratiude Home</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Iconos FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+  <!-- ==== NAVBAR ==== -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">
+        <div class="logo-icon"><img src="img/logoRestaurante.png" alt=""></div>
+        Restaurante Gratitude 
+      </a>
+
+      <!-- Botón responsive -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Contenido colapsable -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <!-- Aquí podrías meter más links si quieres -->
+        </ul>
+        <!-- Botones login/registro -->
+        <div class="d-flex flex-column flex-lg-row gap-2 ms-lg-3 mt-3 mt-lg-0">
+          <a href="https://inicio-sesion-three.vercel.app/" class="btn btn-success btn-custom">
+            <i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión
+          </a>
+          <a href="register.html" class="btn btn-outline-success btn-custom">
+            <i class="fa-solid fa-user-plus"></i> Registrarse
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Sabores <span class="primary">Únicos</span></h1>
+      <p>Descubre una experiencia gastronómica excepcional con ingredientes frescos y recetas tradicionales renovadas
+      </p>
+      <div class="btn-group">
+        <button id="menuBtn" class="btn btn-large primary-btn"><i class="fa-solid fa-utensils"></i> Ver Nuestro
+          Menú</button>
+        <button id="reservaBtn" class="btn btn-large outline-btn"><i class="fa-solid fa-calendar-days"></i> Reservar
+          Mesa</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categorías -->
+  <section class="categorias">
+    <h2>Nuestras Especialidades</h2>
+    <p>Explora nuestras diferentes categorías gastronómicas, cada una con su propio carácter y sabor único</p>
+    <div class="grid">
+      <div class="card">
+        <div class="icon"><i class="fa-solid fa-cake-candles"></i></div>
+        <h3>Repostería</h3>
+        <p>Postres artesanales y dulces únicos</p>
+      </div>
+      <div class="card">
+        <div class="icon"><i class="fa-solid fa-ice-cream"></i></div>
+        <h3>Heladería</h3>
+        <p>Helados artesanales y batidos frescos</p>
+      </div>
+      <div class="card">
+        <div class="icon"><i class="fa-solid fa-crown"></i></div>
+        <h3>Gourmet</h3>
+        <p>Platos exclusivos para paladares exigentes</p>
+      </div>
+      <div class="card">
+        <div class="icon"><i class="fa-solid fa-mug-hot"></i></div>
+        <h3>Bebidas</h3>
+        <p>Cafés especiales y bebidas refrescantes</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Productos destacados -->
+  <section class="productos">
+    <h2>Productos Destacados</h2>
+    <p>Los favoritos de nuestros clientes que no te puedes perder</p>
+    <div id="productosGrid" class="grid">
+      <div class="card">
+        <div class="icon"><i class="fa-solid fa-burger"></i></div>
+        <h3>Hamburguesa Gourmet</h3>
+        <p>Carne de res premium con queso cheddar y vegetales frescos</p>
+        <p class="primary" style="font-weight: 600;">$12.99</p>
+      </div>
+      <div class="card">
+        <div class="icon"><i class="fa-solid fa-pizza-slice"></i></div>
+        <h3>Pizza Artesanal</h3>
+        <p>Masa fermentada 48h con ingredientes selectos</p>
+        <p class="primary" style="font-weight: 600;">$15.50</p>
+      </div>
+      <div class="card">
+        <div class="icon"><i class="fa-solid fa-fish"></i></div>
+        <h3>Salmón a la Parrilla</h3>
+        <p>Salmón salvaje con hierbas finas y vegetales asados</p>
+        <p class="primary" style="font-weight: 600;">$18.75</p>
+      </div>
+    </div>
+    <div class="center">
+      <button id="verMenu" class="btn btn-large outline-btn"
+        style="color: var(--primary-color); border-color: var(--primary-color);">Ver Todo el Menú</button>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section class="testimonios">
+    <h2>Lo Que Dicen Nuestros Clientes</h2>
+    <p>Experiencias reales de quienes han visitado nuestro restaurante</p>
+    <div id="testimoniosGrid" class="grid">
+      <div class="testimonio-card">
+        <div class="testimonio-text">
+          La mejor comida italiana que he probado en la ciudad. El ambiente es acogedor y el servicio excelente.
+        </div>
+        <div class="testimonio-author">- María González</div>
+      </div>
+      <div class="testimonio-card">
+        <div class="testimonio-text">
+          Volveré una y otra vez. Cada plato es una obra maestra de sabores y presentación impecable.
+        </div>
+        <div class="testimonio-author">- Carlos Mendoza</div>
+      </div>
+      <div class="testimonio-card">
+        <div class="testimonio-text">
+          Perfecto para una cena romántica. La iluminación, la música y por supuesto la comida crean una experiencia
+          inolvidable.
+        </div>
+        <div class="testimonio-author">- Ana y Javier Torres</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="contacto">
+    <h2>Visítanos</h2>
+    <p>Estamos siempre disponibles para hacer de tu experiencia algo memorable</p>
+    <div class="grid">
+      <div class="card">
+        <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+        <h3>Ubicación</h3>
+        <p>Av. Principal 123<br>Centro, Ciudad<br>CP 12345</p>
+      </div>
+      <div class="card">
+        <div class="icon"><i class="fa-solid fa-clock"></i></div>
+        <h3>Horarios</h3>
+        <p>Lun - Jue: 12:00 - 22:00<br>Vie - Sáb: 12:00 - 23:00<br>Dom: 12:00 - 21:00</p>
+      </div>
+      <div class="card">
+        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+        <h3>Contacto</h3>
+        <p>Tel: (555) 123-4567<br>Email: info@restaurantapp.com<br>WhatsApp: (555) 987-6543</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="#">Inicio</a>
+      <a href="#">Menú</a>
+      <a href="#">Sobre Nosotros</a>
+      <a href="#">Contacto</a>
+      <a href="#">Términos y Condiciones</a>
+      <a href="#">Política de Privacidad</a>
+    </div>
+    <p>© 2023 RestaurantApp. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Inicializar tooltips de Bootstrap
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+
+</body>
+
+</html>
